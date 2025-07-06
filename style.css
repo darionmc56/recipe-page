@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Outfit", sans-serif;
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -17,18 +18,143 @@ main {
   align-items: center;
   flex-direction: column;
   margin-block: 6rem;
-  width: 80%;
+  width: 700px;
   height: 80%;
   gap: 1.7rem;
   background-color: #fff;
+  border-radius: 1rem;
 }
 
-.img-contanier {
-  width: 55%;
+.img-container {
+  width: 90%;
   height: 300px;
+  margin-top: 2.7rem;
 }
 
-.img-contanier img {
+.img-container img {
   width: 100%;
   height: 100%;
+  border-radius: 0.7rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  margin-right: 8.6rem;
+}
+
+section h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 1.5rem;
+}
+
+section p,
+li {
+  color: hsl(30, 10%, 34%);
+}
+
+.description {
+  margin-right: 3.5rem;
+}
+
+.prep-time-container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(330, 100%, 98%);
+  width: 90%;
+  padding: 2rem 3.5rem;
+  border-radius: 10px;
+}
+
+.prep-time-container .prep-header {
+  width: 100%;
+  text-align: left;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 10px;
+}
+
+.prep-time-container .time-it-takes {
+  margin-left: 3rem;
+  width: 100%;
+}
+
+.prep-time-container .time-it-takes ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prep-time-container .time-it-takes ul li::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 0.7rem;
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  border: none;
+  background-color: hsl(30, 18%, 87%);
+}
+
+.ingredients-container {
+  margin-right: 12rem;
+}
+
+.ingredients-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 1.5rem;
+}
+
+.ingredients-container ul li::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 0.7rem;
+}
+
+.instructions-container {
+  margin-left: 2.4rem;
+}
+
+.instructions-container ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 1.5rem;
+}
+
+.instructions-container ol li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: bolder;
+}
+
+.nutrition-container {
+  margin-right: 4.6rem;
+}
+.nutrition-container p {
+  margin-bottom: 1.5rem;
+}
+
+.nutrition-container table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.nutrition-container table td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.7rem 0;
+}
+
+.nutrition-container table tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrition-container table .label {
+  color: hsl(30, 10%, 34%);
+}
+.nutrition-container table .value {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
 }

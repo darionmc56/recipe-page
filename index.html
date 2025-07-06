@@ -4,49 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
     />
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
     <main>
-      <section class="img-contanier">
+      <section class="img-container">
         <img src="assets/images/image-omelette.jpeg" alt="Omelette-img" />
       </section>
       <section class="title"><h1>Simple Omelette Recipe</h1></section>
       <section class="description">
         <p>
           An easy and quick dish, perfect for any meal. This classic omelette
-          combines beaten eggs cooked to perfection, optionally filled with your
-          choice of cheese, vegetables, or meats.
+          combines beaten eggs <br />
+          cooked to perfection, optionally filled with your choice of cheese,
+          vegetables, or meats.
         </p>
       </section>
-      <section class="prep-time-contanier">
-        <h3>Preparation time</h3>
-        <ul>
-          <li>Total: Approximately 10 minutes</li>
-          <li>Preparation: 5 minutes</li>
-          <li>Cooking: 5 minutes</li>
-        </ul>
+      <section class="prep-time-container">
+        <div class="prep-header"><h3>Preparation time</h3></div>
+        <div class="time-it-takes">
+          <ul>
+            <li><strong>Total:</strong> Approximately 10 minutes</li>
+            <li><strong>Preparation:</strong> 5 minutes</li>
+            <li><strong>Cooking:</strong> 5 minutes</li>
+          </ul>
+        </div>
       </section>
-      <section class="ingredients-contanier">
-        <h2>Ingredients</h2>
-        <ul>
-          <li>2-3 large eggs</li>
-          <li>Salt, to taste</li>
-          <li>Pepper, to taste</li>
-          <li>1 tablespoon of butter or oil</li>
-          <li>
-            Optional fillings: cheese, diced vegetables, cooked meats, herbs
-          </li>
-        </ul>
+      <section class="ingredients-container">
+        <div class="ingredients-header"><h2>Ingredients</h2></div>
+        <div class="ingredients">
+          <ul>
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="instructions-contanier">
+      <hr class="divider" />
+      <section class="instructions-container">
         <h2>Instructions</h2>
         <ol>
           <li>
@@ -79,7 +91,8 @@
           </li>
         </ol>
       </section>
-      <section class="nutrition-contanier">
+      <hr class="divider" />
+      <section class="nutrition-container">
         <h2>Nutrition</h2>
         <p>
           The table below shows nutritional values per serving without the
@@ -87,20 +100,20 @@
         </p>
         <table>
           <tr>
-            <td>Calories</td> 
-            <td>277kcal</td>
+            <td><span class="label">Calories</span></td>
+            <td><span class="value">277kcal</span></td>
           </tr>
           <tr>
-            <td>Carbs</td>
-            <td>0g</td>
+            <td><span class="label">Carbs</span></td>
+            <td><span class="value">0g</span></td>
           </tr>
           <tr>
-            <td>Protein</td>
-            <td>20gl</td>
+            <td><span class="label">Protein</span></td>
+            <td><span class="value">20g</span></td>
           </tr>
           <tr>
-            <td>Fat</td>
-            <td>22g</td>
+            <td><span class="label">Fat</span></td>
+            <td><span class="value">22g</span></td>
           </tr>
         </table>
       </section>
