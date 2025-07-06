@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 6rem;
+  width: 80%;
+  height: 80%;
+  gap: 1.7rem;
+  background-color: #fff;
+}
+
+.img-contanier {
+  width: 55%;
+  height: 300px;
+}
+
+.img-contanier img {
+  width: 100%;
+  height: 100%;
+}
